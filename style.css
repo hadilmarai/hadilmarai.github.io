@@ -29,9 +29,17 @@ ul { list-style: none; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 50px; }
 .section { padding: 100px 0; }
 .text-slate { color: var(--slate); }
-.text-green { color: var(--green); } /* New utility for the headline */
+.text-green { color: var(--green); }
 .mono-heading { font-family: var(--font-mono); color: var(--green); font-size: 1rem; margin-bottom: 20px; display: block; }
 .big-heading { font-size: clamp(40px, 8vw, 80px); color: var(--white); font-weight: 600; line-height: 1.1; }
+
+/* Typing Cursor Effect */
+.typing-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+    color: var(--green);
+}
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
 /* --- Navigation --- */
 .navbar {
@@ -115,6 +123,12 @@ ul { list-style: none; }
 .job-desc li { position: relative; padding-left: 20px; margin-bottom: 10px; font-size: 0.95rem; }
 .job-desc li::before { content: "▹"; position: absolute; left: 0; color: var(--green); }
 
+/* NEW: Tech Tags for Experience (Green) */
+.job-tech {
+    display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px;
+    font-family: var(--font-mono); font-size: 0.8rem; color: var(--green);
+}
+
 /* --- Projects (Cards) --- */
 .bg-light-navy { background: #0e1e38; } 
 .projects-grid {
@@ -122,7 +136,7 @@ ul { list-style: none; }
 }
 .project-card {
     background: var(--light-navy); padding: 2rem 1.75rem; border-radius: 4px;
-    transition: 0.25s; height: 100%;
+    transition: 0.25s; height: 100%; display: flex; flex-direction: column;
     box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
 }
 .project-card:hover { transform: translateY(-7px); }
@@ -132,7 +146,14 @@ ul { list-style: none; }
 .card-links a:hover { color: var(--green); }
 .card-title { color: var(--white); margin-bottom: 10px; font-size: 1.2rem; }
 .card-desc { font-size: 0.9rem; color: var(--light-slate); margin-bottom: 20px; }
-.card-tech { display: flex; gap: 15px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--light-slate); margin-top: auto; }
+
+/* UPDATED: Tech Tags for Projects (Green) */
+.card-tech { 
+    display: flex; gap: 15px; 
+    font-family: var(--font-mono); font-size: 0.75rem; 
+    color: var(--green); /* Changed from slate to Green */
+    margin-top: auto; 
+}
 
 /* --- Skills --- */
 .skills-wrapper { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 800px; margin: 0 auto; }
