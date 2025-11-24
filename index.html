@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadil Marai | AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">HM.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1>Hadil Marai</h1>
+                <h2 class="typing-text">Software Engineer & <span id="typewriter"></span></h2>
+                <p class="bio-short">Specialized in Data Science, Computer Vision, and End-to-End AI Pipelines.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hadil.jpg" alt="Hadil Marai">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a creative and dedicated <strong>IT Engineering student at ESPRIT Tunis</strong> with a strong background in Mathematics and Physics (IPEIN). 
+                    I specialize in building scalable AI systems, from <strong>RAG Agents</strong> to <strong>Computer Vision</strong> solutions.
+                </p>
+                <p>
+                    My passion lies in transforming raw data into intelligent decisions. Whether it's automating document processing or predicting inventory levels for the oil sector, I build technology that makes an impact.
+                </p>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <p>Python, C/C++, SQL, Kotlin, JavaScript, Matlab</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> AI & ML</h3>
+                        <p>PyTorch, LangChain, OpenCV, NLP, Time Series, Scikit-learn</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Dev & Ops</h3>
+                        <p>MLflow, Docker, Git, Streamlit, FastAPI, Web Scraping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-robot folder-icon"></i>
+                        <div class="links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Advanced RAG Agent</h3>
+                    <p>Implemented a Retrieval-Augmented Generation agent using LangGraph, CRAG, and Self-RAG. Features self-grading and hallucination checks to optimize response accuracy.</p>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>LangChain</li>
+                        <li>Vector DB</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-file-alt folder-icon"></i>
+                        <div class="links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>LLM Cover Letter Generator</h3>
+                    <p>An AI tool utilizing Llama 3 and GroqCloud to parse job URLs and generate hyper-personalized cover letters automatically.</p>
+                    <ul class="tech-stack">
+                        <li>Llama 3</li>
+                        <li>Streamlit</li>
+                        <li>Prompt Eng</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-industry folder-icon"></i>
+                        <div class="links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Oil Depot Forecasting System</h3>
+                    <p>Engineering an Integrated Forecasting System to oversee inventory within oil depots. Uses predictive modeling on real-time data to enhance efficiency.</p>
+                    <ul class="tech-stack">
+                        <li>Time Series</li>
+                        <li>Python</li>
+                        <li>Data Science</li>
+                    </ul>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-shield-alt folder-icon"></i>
+                        <div class="links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Risk Management Recommender</h3>
+                    <p>Content-based recommender system for RM TENSTEP. Analyzes project details to suggest tailored risk mitigation tools.</p>
+                    <ul class="tech-stack">
+                        <li>NLP</li>
+                        <li>Recommender Systems</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                
+                <!-- Job 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Feb 2025 - Aug 2025</div>
+                    <div class="timeline-content">
+                        <h3>Data Engineer</h3>
+                        <h4>Technoriat - OurDigitalFuture (Tunis)</h4>
+                        <p>Developing a full-stack AI platform for tender management. Built data ingestion pipelines via web scraping and applied NLP for semantic filtering of heterogeneous data.</p>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jul 2024 - Sep 2024</div>
+                    <div class="timeline-content">
+                        <h3>Freelance AI Engineer</h3>
+                        <h4>My Easy Transfer (Paris/Remote)</h4>
+                        <p>Applied OCR technologies for card info extraction. Implemented facial recognition using OpenCV for secure identity verification.</p>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jun 2024 - Aug 2024</div>
+                    <div class="timeline-content">
+                        <h3>Data Scientist</h3>
+                        <h4>Knowlepsy (Marseille/Remote)</h4>
+                        <p>Engineered statistical features and used K-Means/DBSCAN to analyze smartwatch activity data. Managed experiments using MLflow.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-text">I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <div class="contact-links">
+                <a href="mailto:hadil.marai@esprit.tn" class="contact-btn"><i class="fas fa-envelope"></i> Email Me</a>
+                <a href="https://linkedin.com/in/hadil-marai" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/hadilmarai" target="_blank" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Hadil Marai. Built with Code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
