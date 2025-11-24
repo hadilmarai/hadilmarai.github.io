@@ -3,113 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Hadil Marai - Software Engineer specializing in Data Science & AI.">
     <title>Hadil Marai | AI Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
+    
+    <!-- Icons & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calibre:wght@300;400;500;600&family=SF+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">HM.</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
+        <div class="container nav-container">
+            <a href="#" class="logo">HM<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about"><span class="nav-num">01.</span> About</a></li>
+                <li><a href="#experience"><span class="nav-num">02.</span> Experience</a></li>
+                <li><a href="#projects"><span class="nav-num">03.</span> Projects</a></li>
+                <li><a href="#contact" class="btn-outline">Resume</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="greeting">Hello, I'm</p>
-                <h1>Hadil Marai</h1>
-                <h2 class="typing-text">Software Engineer & <span id="typewriter"></span></h2>
-                <p class="bio-short">Specialized in Data Science, Computer Vision, and End-to-End AI Pipelines.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary">View Work</a>
-                    <a href="#contact" class="btn secondary">Contact Me</a>
+    <header class="hero" id="about">
+        <div class="container hero-layout">
+            <div class="hero-content fade-in-up">
+                <span class="mono-heading">Hi, my name is</span>
+                <h1 class="big-heading">Hadil Marai.</h1>
+                <h2 class="big-heading text-slate">I build intelligent <span class="typing-text"></span></h2>
+                <p class="hero-desc">
+                    I am a Software Engineer specialized in <strong>Data Science & AI</strong>. 
+                    From building complex RAG agents to optimizing inventory with predictive modeling, 
+                    I transform raw data into scalable, production-ready solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#experience" class="btn btn-primary">Check my work</a>
+                    <a href="https://github.com/hadilmarai" target="_blank" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="hadil.jpg" alt="Hadil Marai">
+            
+            <div class="hero-image-wrapper fade-in-up" style="animation-delay: 0.2s;">
+                <div class="img-frame">
+                    <img src="hadil.jpg" alt="Hadil Marai" class="profile-img">
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <!-- Experience Section (MOVED UP as requested) -->
+    <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>
-                    I am a creative and dedicated <strong>IT Engineering student at ESPRIT Tunis</strong> with a strong background in Mathematics and Physics (IPEIN). 
-                    I specialize in building scalable AI systems, from <strong>RAG Agents</strong> to <strong>Computer Vision</strong> solutions.
-                </p>
-                <p>
-                    My passion lies in transforming raw data into intelligent decisions. Whether it's automating document processing or predicting inventory levels for the oil sector, I build technology that makes an impact.
-                </p>
+            <h2 class="section-title"><span class="nav-num">02.</span> Work Experience</h2>
+            
+            <div class="timeline">
                 
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Languages</h3>
-                        <p>Python, C/C++, SQL, Kotlin, JavaScript, Matlab</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-brain"></i> AI & ML</h3>
-                        <p>PyTorch, LangChain, OpenCV, NLP, Time Series, Scikit-learn</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-server"></i> Dev & Ops</h3>
-                        <p>MLflow, Docker, Git, Streamlit, FastAPI, Web Scraping</p>
+                <!-- Job 1 -->
+                <div class="timeline-item hidden">
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3>Data Engineer <span class="company">@ Technoriat</span></h3>
+                            <span class="job-date">Feb 2025 - Aug 2025</span>
+                        </div>
+                        <p class="job-location">Tunis, Tunisia (Hybrid)</p>
+                        <ul class="job-desc">
+                            <li>Developed a full-stack AI platform to streamline public/private tender management.</li>
+                            <li>Built data ingestion pipelines using web scraping for international portals.</li>
+                            <li>Applied NLP (classification, keyword extraction) to structure heterogeneous tender documents.</li>
+                        </ul>
                     </div>
                 </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item hidden">
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3>Freelance AI Engineer <span class="company">@ My Easy Transfer</span></h3>
+                            <span class="job-date">July 2024 - Sep 2024</span>
+                        </div>
+                        <p class="job-location">Paris, France (Remote)</p>
+                        <ul class="job-desc">
+                            <li>Implemented OCR technologies to extract and identify card information automatically.</li>
+                            <li>Built a facial recognition system using OpenCV to compare ID images with live video for secure authentication.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item hidden">
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3>Data Scientist <span class="company">@ Knowlepsy</span></h3>
+                            <span class="job-date">June 2024 - Aug 2024</span>
+                        </div>
+                        <p class="job-location">Marseille, France (Remote)</p>
+                        <ul class="job-desc">
+                            <li>Engineered statistical features and applied unsupervised learning (K-Means, DBSCAN) for hand activity data.</li>
+                            <li>Utilized MLflow to efficiently track, compare, and manage machine learning experiments.</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section bg-light">
+    <section id="projects" class="section bg-light-navy">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title"><span class="nav-num">03.</span> Featured Projects</h2>
             <div class="projects-grid">
                 
                 <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="card-header">
-                        <i class="fas fa-robot folder-icon"></i>
-                        <div class="links">
-                            <a href="#"><i class="fab fa-github"></i></a>
+                <div class="project-card hidden">
+                    <div class="card-top">
+                        <i class="far fa-folder folder-icon"></i>
+                        <div class="card-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <h3>Advanced RAG Agent</h3>
-                    <p>Implemented a Retrieval-Augmented Generation agent using LangGraph, CRAG, and Self-RAG. Features self-grading and hallucination checks to optimize response accuracy.</p>
-                    <ul class="tech-stack">
-                        <li>Python</li>
+                    <h3 class="card-title">Advanced RAG Agent</h3>
+                    <div class="card-desc">
+                        <p>Implemented a RAG agent leveraging LangGraph and CRAG. Integrated document self-grading and query routing to minimize hallucinations and optimize retrieval.</p>
+                    </div>
+                    <ul class="card-tech">
                         <li>LangChain</li>
+                        <li>Python</li>
                         <li>Vector DB</li>
                     </ul>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="card-header">
-                        <i class="fas fa-file-alt folder-icon"></i>
-                        <div class="links">
-                            <a href="#"><i class="fab fa-github"></i></a>
+                <div class="project-card hidden">
+                    <div class="card-top">
+                        <i class="far fa-folder folder-icon"></i>
+                        <div class="card-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <h3>LLM Cover Letter Generator</h3>
-                    <p>An AI tool utilizing Llama 3 and GroqCloud to parse job URLs and generate hyper-personalized cover letters automatically.</p>
-                    <ul class="tech-stack">
+                    <h3 class="card-title">LLM Cover Letter Gen</h3>
+                    <div class="card-desc">
+                        <p>AI-powered tool using Llama 3 and GroqCloud to automatically generate personalized cover letters based on job offer URLs and user details.</p>
+                    </div>
+                    <ul class="card-tech">
                         <li>Llama 3</li>
                         <li>Streamlit</li>
                         <li>Prompt Eng</li>
@@ -117,35 +159,40 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="card-header">
-                        <i class="fas fa-industry folder-icon"></i>
-                        <div class="links">
-                            <a href="#"><i class="fab fa-github"></i></a>
+                <div class="project-card hidden">
+                    <div class="card-top">
+                        <i class="far fa-folder folder-icon"></i>
+                        <div class="card-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <h3>Oil Depot Forecasting System</h3>
-                    <p>Engineering an Integrated Forecasting System to oversee inventory within oil depots. Uses predictive modeling on real-time data to enhance efficiency.</p>
-                    <ul class="tech-stack">
+                    <h3 class="card-title">Oil Depot Forecasting</h3>
+                    <div class="card-desc">
+                        <p>Engineered an integrated forecasting system to oversee inventory within oil depots. Utilized predictive modeling on real-time data to refine decision-making.</p>
+                    </div>
+                    <ul class="card-tech">
                         <li>Time Series</li>
-                        <li>Python</li>
                         <li>Data Science</li>
+                        <li>Python</li>
                     </ul>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="card-header">
-                        <i class="fas fa-shield-alt folder-icon"></i>
-                        <div class="links">
-                            <a href="#"><i class="fab fa-github"></i></a>
+                <div class="project-card hidden">
+                    <div class="card-top">
+                        <i class="far fa-folder folder-icon"></i>
+                        <div class="card-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <h3>Risk Management Recommender</h3>
-                    <p>Content-based recommender system for RM TENSTEP. Analyzes project details to suggest tailored risk mitigation tools.</p>
-                    <ul class="tech-stack">
+                    <h3 class="card-title">Risk Management Sys</h3>
+                    <div class="card-desc">
+                        <p>Content-based recommender system for RM TENSTEP. Analyzes risk types and severity to recommend tailored mitigation tools.</p>
+                    </div>
+                    <ul class="card-tech">
                         <li>NLP</li>
-                        <li>Recommender Systems</li>
+                        <li>Recommender</li>
+                        <li>Filtering</li>
                     </ul>
                 </div>
 
@@ -153,67 +200,42 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                
-                <!-- Job 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Feb 2025 - Aug 2025</div>
-                    <div class="timeline-content">
-                        <h3>Data Engineer</h3>
-                        <h4>Technoriat - OurDigitalFuture (Tunis)</h4>
-                        <p>Developing a full-stack AI platform for tender management. Built data ingestion pipelines via web scraping and applied NLP for semantic filtering of heterogeneous data.</p>
-                    </div>
-                </div>
-
-                <!-- Job 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jul 2024 - Sep 2024</div>
-                    <div class="timeline-content">
-                        <h3>Freelance AI Engineer</h3>
-                        <h4>My Easy Transfer (Paris/Remote)</h4>
-                        <p>Applied OCR technologies for card info extraction. Implemented facial recognition using OpenCV for secure identity verification.</p>
-                    </div>
-                </div>
-
-                <!-- Job 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jun 2024 - Aug 2024</div>
-                    <div class="timeline-content">
-                        <h3>Data Scientist</h3>
-                        <h4>Knowlepsy (Marseille/Remote)</h4>
-                        <p>Engineered statistical features and used K-Means/DBSCAN to analyze smartwatch activity data. Managed experiments using MLflow.</p>
-                    </div>
-                </div>
-
+    <!-- Skills Compact Section -->
+    <section id="skills" class="section">
+        <div class="container text-center">
+            <h2 class="section-title center-line">Technical Skills</h2>
+            <div class="skills-wrapper hidden">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">C/C++</span>
+                <span class="skill-pill">SQL</span>
+                <span class="skill-pill">PyTorch</span>
+                <span class="skill-pill">TensorFlow</span>
+                <span class="skill-pill">Computer Vision</span>
+                <span class="skill-pill">NLP</span>
+                <span class="skill-pill">RAG</span>
+                <span class="skill-pill">MLflow</span>
+                <span class="skill-pill">Docker</span>
+                <span class="skill-pill">Streamlit</span>
+                <span class="skill-pill">Git</span>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <div class="container contact-container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-text">I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-            <div class="contact-links">
-                <a href="mailto:hadil.marai@esprit.tn" class="contact-btn"><i class="fas fa-envelope"></i> Email Me</a>
-                <a href="https://www.linkedin.com/in/hadil-marai-728717202/" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/hadilmarai" target="_blank" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <h3>Let's Build Something Amazing.</h3>
+            <p>I am currently looking for new opportunities. My inbox is always open.</p>
+            <a href="mailto:hadil.marai@esprit.tn" class="btn btn-primary big-btn">Say Hello</a>
+            
+            <div class="socials">
+                <a href="https://linkedin.com/in/hadil-marai"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/hadilmarai"><i class="fab fa-github"></i></a>
             </div>
+            <p class="copyright">Designed & Built by Hadil Marai © <span id="year"></span></p>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; <span id="year"></span> Hadil Marai. Built with Code.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
